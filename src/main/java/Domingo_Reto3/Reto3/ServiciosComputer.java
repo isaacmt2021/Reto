@@ -30,7 +30,7 @@ public class ServiciosComputer {
         if(computer.getId()==null){
             return metodosCrud.save(computer);
         }else{
-            Optional<Computer> e=metodosCrud.getBike(computer.getId());
+            Optional<Computer> e=metodosCrud.getComputer(computer.getId());
             if(e.isEmpty()){
                 return metodosCrud.save(computer);
             }else{

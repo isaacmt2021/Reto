@@ -32,7 +32,7 @@ public class ControladorComputer {
      @Autowired
     private ServiciosComputer servicio;
     @GetMapping("/all")
-    public List<Computer> getComputer(){
+    public List<Computer> getComputers(){
         return servicio.getAll();
     }
 

@@ -23,7 +23,7 @@ public class RepositorioComputer {
         return (List<Computer>) crud.findAll();
     }
 
-    public Optional<Computer> getBike(int id){
+    public Optional<Computer> getComputer(int id){
         return crud.findById(id);
     }
 
@@ -33,9 +33,5 @@ public class RepositorioComputer {
     public void delete(Computer computer){
         crud.delete(computer);
     }
-
-    Optional<Computer> getComputer(int computerId) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+ 
     }
-    
-}
